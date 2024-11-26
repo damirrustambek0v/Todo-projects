@@ -1,12 +1,12 @@
 from django.shortcuts import HttpResponse
 
+
 def task_create(request):
     html_response = """
  <!DOCTYPE html>
 <style>
     h1 {
-        color: blue;
-        backround-color:breen;
+        color: red;
     }
 </style>
 <html lang="uz">
@@ -38,5 +38,15 @@ def task_create(request):
     </form>
 </body>
 </html>
+
+
+<h1>
+   MAVJUD VAZIFALAR
+
+</h1>
+
+
     """
-    return HttpResponse(html_response)
+
+
+return HttpResponse(html_response)
